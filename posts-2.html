@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b08-ss-room-real2-1</title>
+  <meta name="description" content="t3b08-ss-room-real2-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sangsu-room-review.namanavi.com/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ html { font-size: 16px; scroll-behavior: smooth; }
+ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8f8f8; color: #1a1a1a; line-height: 1.6; }
+ .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+ /* ---- Header & Navigation ---- */
+ header { background: #1a1a1a; color: #fff; position: sticky; top: 0; z-index: 100; }
+ .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; max-width: 1200px; margin: 0 auto; }
+ .logo { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; }
+ .logo span { color: #d4a574; }
+ nav { display: flex; gap: 28px; align-items: center; }
+ nav a { color: #ccc; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+ nav a:hover { color: #fff; }
+ .nav-cta { background: #d4a574; color: #1a1a1a; padding: 8px 20px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: background 0.2s; }
+ .nav-cta:hover { background: #c49464; color: #1a1a1a; }
+ .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+ .hamburger span { display: block; width: 24px; height: 2px; background: #fff; border-radius: 2px; }
+ @media (max-width: 768px) {
+ nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #1a1a1a; padding: 20px; gap: 16px; }
+ nav.active { display: flex; }
+ .hamburger { display: flex; }
+ .nav-cta { margin-top: 8px; }
+ }
+ /* ---- Hero / Page Header ---- */
+ .page-hero { background: #2a2a2a; color: #fff; padding: 60px 0 50px; text-align: center; }
+ .page-hero h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 12px; }
+ .page-hero p { font-size: 1.05rem; color: #bbb; max-width: 700px; margin: 0 auto; }
+ /* ---- Info Section ---- */
+ .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 60px 0; }
+ @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; gap: 30px; } }
+ .info-card { background: #fff; border-radius: 8px; padding: 32px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+ .info-card h2 { font-size: 1.3rem; font-weight: 600; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 2px solid #d4a574; }
+ .info-card ul { list-style: none; }
+ .info-card li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+ .info-card li:last-child { border-bottom: none; }
+ .info-card .label { color: #666; font-weight: 500; }
+ .info-card .value { font-weight: 600; color: #1a1a1a; }
+ .info-card p { color: #444; margin-bottom: 12px; }
+ /* ---- Data Highlights ---- */
+ .data-row { background: #fff; border-radius: 8px; padding: 28px 32px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; align-items: center; gap: 20px; }
+ .data-icon { font-size: 2rem; color: #d4a574; min-width: 50px; text-align: center; }
+ .data-content h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 6px; }
+ .data-content p { color: #555; font-size: 0.95rem; }
+ /* ---- CTA Section ---- */
+ .cta-section { background: #1a1a1a; color: #fff; padding: 50px 0; text-align: center; }
+ .cta-section h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 12px; }
+ .cta-section p { color: #bbb; margin-bottom: 24px; font-size: 1rem; }
+ .cta-btn { display: inline-block; background: #d4a574; color: #1a1a1a; padding: 14px 40px; border-radius: 4px; font-weight: 600; font-size: 1.1rem; text-decoration: none; transition: background 0.2s; }
+ .cta-btn:hover { background: #c49464; }
+ /* ---- Footer ---- */
+ footer { background: #111; color: #777; padding: 30px 0; text-align: center; font-size: 0.85rem; }
+ footer a { color: #d4a574; text-decoration: none; }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b08-ss-room-real2-1">
+  <meta property="og:description" content="t3b08-ss-room-real2-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sangsu-room-review.namanavi.com/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <div class="logo">상수<span>룸싸롱</span></div>
+ <button class="hamburger" onclick="this.parentElement.nextElementSibling.classList.toggle('active')">
+ 
+ </button>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/review">찐후기</a>
+ <a href="/price">가격</a>
+ 
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 40개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0438.html">상수 룸싸롱 찐후기 트래픽 관리와 구글 인덱싱 속도 초고속 광회선 대역폭 최적화 비교</a>
+        <p class="post-item__summary">온라인 환경에서 상수 룸싸롱 찐후기와 같은 데이터를 다룰 때 가장 큰 걸림돌은 정보가 얼마나 빠르게 검색 엔진에 반영되는가입니다. 인덱싱 속도를 결정짓는 것은 결국 데이터가 오가는 통로인 광회선의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0439.html">상수 룸싸롱 찐후기 기반의 구글 신뢰 지수 모발이식 솔루션 분석</a>
+        <p class="post-item__summary">많은 이들이 검색 엔진 최적화 전략을 세울 때 가장 먼저 범하는 실수는 콘텐츠의 본질보다 기술적인 수치에만 과도하게 집중하는 것입니다. 상수 룸싸롱 찐후기 정보를 찾을 때처럼 사용자는 실제 경험과 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0386.html">상수 룸싸롱 찐후기 말고 알아보는 망원 노래방 추천정보</a>
+        <p class="post-item__summary">많은 이들이 밤문화에 대해 막연히 상수 룸싸롱 찐후기 같은 정보를 찾으면 즐거운 시간을 보낼 수 있을 것이라 오해하곤 합니다. 하지만 화려한 겉모습에 가려진 실체는 예상과 다를 수 있으며, 건전하게</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0387.html">상수 룸싸롱 찐후기 보다 유익한 홍대 노래방 추천정보</a>
+        <p class="post-item__summary">성공적인 모임은 장소 선정에서 시작되며, 단순히 상수 룸싸롱 찐후기 같은 정보를 찾아 헤매기보다는 멤버의 인원 구성과 취향을 고려해야 합니다. 홍대는 유동 인구가 많아 노래방 선택지가 다양하지만, </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0388.html">상수 룸싸롱 찐후기 보러 가기 전 공덕 셔츠룸 추천정보</a>
+        <p class="post-item__summary">여러분은 유흥 업소를 선택할 때 어떤 기준을 가지고 계신가요? 단순히 상수 룸싸롱 찐후기 같은 온라인상의 단편적인 글만 믿고 예약을 서두르지는 않으셨는지 돌아볼 필요가 있습니다. 공덕 지역에서 셔츠</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0389.html">상수 룸싸롱 찐후기 기반으로 보는 연남 유흥 추천정보 가이드</a>
+        <p class="post-item__summary">상수 룸싸롱 찐후기 내용을 분석하다 보면, 특정 정보가 과장되었는지 판별해야 하는 순간이 옵니다. 온라인에 떠도는 수많은 글 중에서는 실제 경험자가 작성한 것과 홍보를 위해 조작된 글이 섞여 있기 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0390.html">상수 룸싸롱 찐후기 분석을 통한 마곡 가라오케 추천정보 가격 기준</a>
+        <p class="post-item__summary">상수 룸싸롱 찐후기 사례를 참고하여 마곡 지역의 가격 구조를 이해하고자 할 때, 정찰제와 변동제라는 두 가지 방식을 대조할 수 있습니다. 정찰제는 이용 전 미리 총비용을 가늠할 수 있어 계획적인 방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0391.html">상수 룸싸롱 찐후기 체크로 확인하는 마곡 유흥 추천정보 예약법</a>
+        <p class="post-item__summary">상수 룸싸롱 찐후기 내용을 보면 많은 이용객이 사전 예약 단계에서 실패하는 지점을 경험합니다. 가장 흔한 실수는 업소의 운영 시스템을 충분히 파악하지 않은 채 무작정 방문을 시도하는 경우입니다. 인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0392.html">상수 룸싸롱 찐후기 대조로 완성하는 합정 노래방 추천정보 리스트</a>
+        <p class="post-item__summary">상수 룸싸롱 찐후기 사례와 비교하며 합정 일대의 업소를 찾을 때는 위치와 접근성을 최우선 확인 항목으로 둬야 합니다. 노래방은 주로 밤늦은 시간에 방문하므로 지하철역이나 주요 대중교통 거점에서 도보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0393.html">상수 룸싸롱 찐후기 경험에서 살펴본 연남 클럽 추천정보</a>
+        <p class="post-item__summary">지난번 상수 룸싸롱 찐후기 내용을 작성하면서 느꼈던 점은 분위기 파악이 무엇보다 중요하다는 사실입니다. 연남동 일대에서 활동하는 사람들이 클럽 문화를 즐길 때 종종 장소 선택에 어려움을 겪곤 합니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0394.html">상수 룸싸롱 찐후기 속설과 합정 셔츠룸 추천정보</a>
+        <p class="post-item__summary">많은 이들이 상수 룸싸롱 찐후기 정보를 접하며 오해하는 것 중 하나가 서비스가 무조건 일률적일 것이라는 생각입니다. 실제로 합정 인근의 셔츠룸 시스템은 시간대별로 그 밀도와 서비스의 질이 확연하게 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0395.html">상수 룸싸롱 룸싸롱 찐후기 기반의 공덕 가라오케 추천정보</a>
+        <p class="post-item__summary">성공적인 모임을 위한 상수 룸싸롱 찐후기 경험들을 살펴보면 몇 가지 명확한 충족 조건이 존재합니다. 특히 인원 구성에 따른 최적화된 공간 배정은 공덕 가라오케를 이용할 때 가장 고려해야 할 첫 번째</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0396.html">상수 룸싸롱 찐후기 분석을 통한 상수 마사지 추천정보</a>
+        <p class="post-item__summary">여러분은 평소 쌓인 피로를 풀기 위해 어떤 방법을 가장 먼저 떠올리시나요? 과거 상수 룸싸롱 찐후기 정보를 찾아보며 느꼈던 신뢰감의 중요성을 이제는 상수 마사지 영역에서도 동일하게 적용하고 있습니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/guide-001-hydhhh.html">프레임 단위의 숨은 경로, 다크소울 데모와 상수 룸싸롱의 구조적 유사성</a>
+        <p class="post-item__summary">스피드러너들이 가장 많이 논의하는 프레임 단위 글리치 중 하나다. 특정 패치가 적용되기 전에는 가능했던 스킵 루트가 출시 버전에서 막히는 현상을 말하는 건데, 이는 다크소울 1 데모 버전의 맵 배치</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">상수 룸싸롱 관련 정보</a>
+        <p class="post-item__summary">상수 지역에는 다양한 형태의 휴식 공간과 유흥 시설이 자리 잡고 있으며, 이에 대한 기본적인 정보는 많은 방문객들이 참고하려는 주요 대상입니다. 룸싸롱은 특정 지역의 문화적 맥락에서 사람들이 여가를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">상수 룸싸롱 찐후기 및 지역 정보 안내</a>
+        <p class="post-item__summary">룸싸롱 업계는 지역별 특색과 문화적 배경에 따라 다른 형태로 운영되며, 상수 지역 또한 예외는 아닙니다. 이 지역은 오랜 역사를 지닌 상권으로, 다양한 형태의 hospitality 서비스가 존재해 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">상수 룸싸롱 찐후기</a>
+        <p class="post-item__summary">상수 지역의 룸싸롱에 대한 정보는 다양한 경로를 통해 접할 수 있으며, 관련 시설을 이용하는 목적이나 취향은 개인마다 다를 수 있습니다. 이러한 정보들을 찾다 보면 자연스럽게 인근 지역의 다른 레저</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">상수 룸싸롱 찐후기</a>
+        <p class="post-item__summary">상수 지역에는 다양한 유흥 업종이 밀집해 있으며, 방문 전 각 업종의 특징을 미리 비교해 두는 것이 중요하다. 룸싸롱은 주로 소형 개별 룸에서 술과 대화를 즐기는 형태로 운영되며, 클럽과 백수오일의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">상수 룸싸롱 정보 및 인터넷 환경 안내</a>
+        <p class="post-item__summary">상수 지역에는 다양한 형태의 숙박 및 휴식 시설이 위치해 있으며, 방문 전 충분한 정보를 습득하는 것이 중요합니다. 특히 이러한 장소의 운영 현황이나 내부 시설에 대한 정확한 내용은 공식 채널을 통</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-1dq6tqp.html">상수 룸싸롱, 예약 전 확인 순서대로 정리</a>
+        <p class="post-item__summary">처음 알아보는 경우 무엇부터 확인해야 할지 순서를 잡기 어려울 수 있습니다. 상수 지역에서 룸싸롱을 이용하기 전에 확인하면 좋은 절차를 순서대로 정리했습니다.</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
